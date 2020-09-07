@@ -1,0 +1,38 @@
+<div id="maincontent" class="content p-l0">
+    <div style="overflow-x : hidden">
+    <h1>Dashboard</h1>
+    <div class="app-box container">
+        <div class="col-lg-10 inner-box">
+            
+            <table cellpadding="20">
+                <tr>
+                    <td class="chart">
+                    <canvas baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType">
+                    </canvas>           
+                    </td>
+                    
+                    
+                    
+                <td>
+                
+                    <div class="app" style="width:270px">
+                        <div class="icon"><img width="119px" height="119px" src="assets/images/exhibit.png"></div>
+                        <div class="app-heading">Exhibit</div>
+                    </div>
+                    <div class="app">
+                        <div class="icon"><img width="119px" height="119px" src="assets/images/pay_slip.jpg"></div>
+                        <div class="app-heading">Pay Slip</div>
+                    </div>
+                </td>
+                </tr>
+                </table>
+            
+        </div>
+    </div>
+    </div>
+</div>

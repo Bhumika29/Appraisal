@@ -1,0 +1,105 @@
+@import "../../../../../scss/colors.scss";
+
+.wrapper-white-bg {
+  background: $text-color;
+  padding: 30px 15px;
+  display: flex;
+  margin: 0 30px;
+  border-radius: 5px;
+  border: 1px solid $text-color;
+}
+.category {
+  width: 100%;
+  padding: 0 15px;
+}
+.job-category {
+  margin: 0 auto;
+  padding: 7px 0 !important;
+}
+.job-category input {
+  border: 0;
+  border-bottom: 1px solid $dropdown-border;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+.form1,
+.form2 {
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  white-space: normal;
+  position: relative;
+  color: $dark-text;
+}
+.add {
+  font-size: 14px;
+  padding: 4px 20px;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > td,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > thead > tr > th {
+    white-space: nowrap;
+  }
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid $tableborder;
+}
+.tableheader th {
+  padding: 8px !important;
+  border: 0 !important;
+  vertical-align: middle;
+}
+table > tbody > tr > th {
+  cursor: pointer;
+}
+.tableheader {
+  background-color: $tableheader;
+  color: $dark-text;
+  padding: 6px;
+  border: 0;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+th {
+  text-align: left;
+}
+td,
+th {
+  padding: 0;
+}
+.job-category select {
+  margin: 0 10px;
+  box-shadow: none;
+  border: 1px solid $dropdown-border;
+}
+.text-right {
+  text-align: right;
+}
+#add {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}

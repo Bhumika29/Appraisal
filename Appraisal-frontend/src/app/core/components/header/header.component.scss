@@ -1,0 +1,78 @@
+@import "../../../../scss/colors.scss";
+
+.sidebar-brand {
+  margin-left: 25px;
+  margin-top: 18px;
+  display: inline-block;
+}
+.sidebar-right {
+  margin-right: 25px;
+  margin-top: 18px;
+  display: inline-block;
+}
+
+.sidebar-brand img,
+.sidebar-right img {
+  margin-top: -10px;
+}
+#navbar-icons {
+  position: relative;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 7px;
+}
+.smallprofile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: 5px;
+}
+.fa-sign-out {
+  padding-right: 4px;
+}
+.fa-angle-down {
+  position: absolute;
+  right: 30px;
+  font-size: 22px;
+}
+#navbar-icons {
+  position: relative;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 7px;
+}
+
+.topmenu {
+  width: inherit;
+  box-sizing: border-box;
+  float: left;
+  min-height: 50px;
+  height: 57px;
+}
+.topmenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+.topmenu-left {
+  float: left;
+  margin-bottom: 6px;
+}
+.topmenu-right {
+  float: right;
+  margin-bottom: 6px;
+  margin-top: 5px;
+}
+.topmenu-right li {
+  float: left;
+  margin: 5px;
+}
+.topmenu-right li a {
+  color: $text-color;
+  line-height: 45px;
+  font-size: 16px;
+}
+.topmenu-left li a {
+  color: $text-color;
+  font-size: 20px;
+}

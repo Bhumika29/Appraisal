@@ -1,0 +1,38 @@
+<nav class="navbar navbar-default" id="navmenu">
+        <div class="topmenu">
+                <ul class="topmenu-left ">
+                        <li class="sidebar-brand">
+                                <a routerlink="/dashboard" href="/ars/dashboard">
+                                        <img alt="argusoft" src="assets/images/argusoft.png">
+                                </a>
+                        </li>
+                        <li class="sidebar-brand m-l220" id="logo">
+                                <a (click)="onClick()" href="#" id="menu-toggle">
+                                        <img width="37" height="13" src="assets/images/menu.png">
+                                </a>
+                        </li>
+                </ul>
+                <ul class="topmenu-right p-r25">
+
+                        <li id="navbar-icons">
+                                <img width="24" height="24" src="assets/images/notification.png" title="Notifications">
+
+                        </li>
+
+                        <li id="navbar-icons" class="btn-group" style="margin-right:10px">
+                                <a class="btn circle" id="button-basic" routerlink="personal/personaldetails"
+                                        type="button" title="Bhumika	 Kalyani"
+                                        href="/ars/dashboard/personal/personaldetails"
+                                        style="background-image: url(&quot;https://lh3.googleusercontent.com/a-/AOh14GjNphPHQMjt5tDqNiggN-vEnl2QZ-07hCAhsGOB?sz=100&quot;);">
+                                </a>
+                        </li>
+
+                        <li id="navbar-icons" style="padding-top: 5px;float: right;padding-left: 7px;">
+                                <a (click)="signOut()" style="line-height: 15px" class="pointer" title="Signout"><img
+                                                style="vertical-align: middle" src="assets/images/logout.png"></a>
+                        </li>
+                </ul>
+        </div>
+</nav>
+
+<app-sidebar [toggle]="toggle"></app-sidebar>

@@ -1,0 +1,122 @@
+@import "../../../../scss/colors.scss";
+
+
+#maincontent {
+    transition: all 0.4s ease 0s;
+    margin-top: 60px;
+    min-height: calc(100vh - 103px);
+  }
+.wrapper-white-bg {
+  background: $text-color;
+  padding: 30px 15px;
+  display: flex;
+  margin: 0 30px;
+  border-radius: 5px;
+  border: 1px solid $text-color;
+}
+.category {
+  width: 100%;
+  padding: 0 15px;
+}
+.job-category {
+  margin: 0 auto;
+  padding: 7px 0 !important;
+}
+.job-category input {
+  border: 0;
+  border-bottom: 1px solid $dropdown-border;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+.form1,
+.form2 {
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  white-space: normal;
+  position: relative;
+  color: $dark-text;
+}
+.add {
+  font-size: 14px;
+  padding: 4px 20px;
+}
+
+.job-category select {
+  margin: 0 10px;
+  box-shadow: none;
+  border: 1px solid $dropdown-border;
+}
+.text-right {
+  text-align: right;
+}
+#add {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}
+.inner-box {
+    margin: 0 auto;
+    float: none;
+}
+.chart{
+    height:80%;
+    width:80%;
+    padding: 0px;
+    background-color: white;
+}
+.nopadding {
+    padding: 0px;
+}
+@media (min-width: 768px)
+{
+.col-sm-3 {
+    width: 25%;
+}
+}
+.app {
+    border: 1px solid black;
+    height: 150px;
+    margin: 10px;
+    border-radius: 6px;
+    position: relative;
+    transition: all .6s;
+    border-color: white;
+    background-color: white;
+    color: #fff;
+}
+.icon {
+    text-align: center;
+}
+.icon img {
+    transition: transform .2s;
+}
+.logo img {
+    margin-bottom: 10px;
+}
+.banner {
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 90%, #b95689, #a92d6c 45%, #9a155a 68%, #690438);
+    background-size: contain;
+    background-position: center bottom;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    /* overflow: hidden; */
+}
+.app-heading {
+    text-align: center;
+    color: $maroon-color;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    padding: 0px;
+}

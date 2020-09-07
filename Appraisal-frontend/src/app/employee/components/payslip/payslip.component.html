@@ -1,0 +1,60 @@
+<div id="maincontent" class="content p-l0">
+    <div style="overflow-x : hidden">
+    <h1>Dashboard</h1>
+    <div class="app-box container">
+        <div class="col-lg-10 inner-box">
+            
+            <table cellpadding="20">
+                <tr>
+                    <td class="chart">
+                    <canvas baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType">
+                    </canvas>           
+                    </td>
+                    
+                <td>
+                   
+<div class="container form" style="background-color: white;">
+    <h2>PaySlip</h2>
+    <form >
+        
+      <div class="form-group">
+        <label for="uname">Select Month</label>
+        <select class="form-control" id="sel1">
+            <option>January</option>
+            <option>Feburary</option>
+            <option>March</option>
+            <option>April</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Select Year</label>
+        <select class="form-control" id="sel1">
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+          </select>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-sm-5">
+            <button class="btn custombtn ">View</button>
+        </div>
+        <div class="col-lg-5 col-sm-5">
+            <button class="btn custombtn">Download</button>
+        </div>
+        </div>
+    </form>
+  </div>
+                </td>
+                </tr>
+                </table>
+            
+        </div>
+    </div>
+    </div>
+</div>

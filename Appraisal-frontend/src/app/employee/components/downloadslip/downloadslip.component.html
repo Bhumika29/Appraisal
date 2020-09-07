@@ -1,0 +1,64 @@
+<div id="maincontent" class="content p-l0">
+    <div class="container">
+        <div>
+            <table id="head" border="1" style= "width:100%;  height:10%; float:left">
+                <tr>
+                    <th class="bold" style="font-size: large;"> Argusoft India Limited </th>
+                </tr>
+                <tr>
+                    <th  class="bold">A-66, GIDC Electronics Estate, Sector – 25, Gandhinagar, India 382 016.</th>
+                </tr>
+                <tr>
+                    <th  class="bold">Salary Slip for Feb,2020</th>
+                </tr>
+            </table>
+        </div>
+        <div class="border">
+                <table  border="1" id="employeeDetail1" style= "width:50%; height:10%; float:left;">
+                    <tr *ngFor="let detail of employeeDetailsL">
+                        <td>{{detail}}</td>
+                    </tr>
+                </table>
+                <table  border="1" id="employeeDetail2" style= "width:50%;  height:10%; float:left">
+                    <tr *ngFor="let detail of employeeDetailsR">
+                        <td>{{detail}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="border">
+                <table  border="1" id="incomeData" style= "width:50%; height:10%; float:left;">
+                    <tr><th colspan="2">Income (INR) </th></tr>
+                    <tr *ngFor="let data of incomeData">
+                        <td>{{data.name}} </td>
+                        <td>{{data.value}}</td>
+                    </tr>
+                </table>
+                <table  border="1" id="deductionData" style= "width:50%;  height:10%; float:right">
+                    <tr><th colspan="2">Deductions (INR) </th></tr>
+                    <tr *ngFor="let data of deductionData">
+                        <td>{{data.name}}</td>
+                        <td>{{data.value}}</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <table  id="total" border="1" style= "width:100%;  height:10%; float:left">
+            <tr>
+                <td>Gross Salary :</td>
+                <td >25200</td>
+                <td >Total Deductions :</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td colspan="2">Net Salary</td>
+                <td colspan="2">25200</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td colspan="2">25200</td>
+            </tr>
+        </table>
+    </div>
+    <button (click)="downloadPDF()">Click</button>
+</div>
+    

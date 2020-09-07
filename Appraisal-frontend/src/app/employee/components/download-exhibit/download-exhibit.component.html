@@ -1,0 +1,41 @@
+<div id="maincontent" class="content p-l0">
+<div class="container">
+    <table id="table" border="1">
+        <thead>
+        <tr>
+            <th colspan="5">Exhibit A</th>
+        </tr>
+        <tr>
+            <th colspan="5">Compensation Details</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>XYZ</th>
+            <th> </th>
+            <th>with effect from July 2020</th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th>Role</th>
+            <th>Rolename</th>
+            <th> </th>
+            <th>Employee No.</th>
+            <th>A123</th>
+        </tr>
+        <tr>
+            <th colspan="5">Fixed Components</th>
+        </tr>
+        </thead>
+        <tbody *ngFor="let data of tableData">
+        <tr>
+            <th class="bold" colspan="5">{{data.heading}}</th>
+        </tr>
+        <tr *ngFor="let field of data.fields">
+            <td colspan="4">{{field.name}}</td>
+            <td>{{field.value}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<button (click)="downloadPDF()">Click</button>
+</div>

@@ -1,0 +1,60 @@
+<div id="maincontent" class="content p-l0">
+    <h1>Template List</h1>
+    <div class="wrapper-white-bg pt-0">
+        <div class="category">
+            <div class="job-category nopadding m-t10 col-xs-12 col-sm-12">
+                <form class="form-inline form1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label>Show</label>
+                        <select [(ngModel)]="entries" [ngModelOptions]="{standalone: true}" class="form-control">
+                            <option *ngFor="let entry of addEntries">{{entry}}</option>
+                        </select>
+                        <label>entries out of {{templateLength}}</label>
+                    </div>
+                </form>
+                <form class="form-inline form2 p-0 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <input class="form-control" name="Search" placeholder="Search" type="text"
+                            [(ngModel)]="searchText">
+                    </div>
+                </form>
+                <form  class="form-inline form2 p-0 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div id="add" class="form-group">
+                        <button class="btn custombtn add">Add <i class="fa fa-plus"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-responsive nopadding col-xs-12 col-sm-12">
+                <table class="table" *ngIf="templateData">
+                    <tbody>
+                        <tr class="tableheader">
+                            <th *ngFor="let template of templateFields" (click)="sortByField(template.field)">
+                                {{template.header}}
+                                <span *ngIf="template.header != 'Update ' && template.header != 'Delete '"
+                                    [ngClass]="toggleClass"></span>
+                            </th>
+                        </tr>
+                        <tr class="tabledata" 
+                            *ngFor="let template of templateData | search:searchText | sort:sortTemplateField : toggleValue | paginate: { itemsPerPage:entries, currentPage: p }">
+                            <td>{{template.template_name}}</td>
+                            <td>{{template.allowed_profile}}</td>
+                            <td>{{template.allowed_experience}}</td>
+                            <td>{{template.allowed_exhibit}}</td>
+                            <td><a class="btn">
+                                    <div style="font-size:25px;"><i class="fa fa-edit" title="Edit"></i></div>
+                                </a></td>
+                            <td><button class="btn">
+                                    <div style="font-size:25px;"><i class="fa fa-trash" title="Delete"></i></div>
+                                </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-xs-12">
+                    <div *ngIf="templateData.length > entries" class="pagination pull-right">
+                        <pagination-controls autohide=true (pageChange)="p = $event" ></pagination-controls>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
